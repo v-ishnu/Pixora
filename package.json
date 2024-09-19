@@ -8,8 +8,9 @@
     "@nativescript/theme": "^3.1.0"
   },
   "devDependencies": {
+    "@nativescript/android": "8.8.4",
     "@nativescript/types": "~8.8.0",
     "@nativescript/webpack": "~5.0.0",
-    "typescript": "~5.4.0"
+    "typescript": "^5.6.2"
   }
 }
