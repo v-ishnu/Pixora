@@ -1,0 +1,5 @@
+<Page class="page" actionBarHidden="true">
+    <StackLayout>
+        <Label text="Welcome to the Profile Page" class="content" />
+    </StackLayout>
+</Page>

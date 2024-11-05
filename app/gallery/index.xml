@@ -1,0 +1,6 @@
+<Page class="page" actionBarHidden="true">
+
+    <StackLayout>
+        <Label text="This is the Gallery Page" class="content" />
+    </StackLayout>
+</Page>

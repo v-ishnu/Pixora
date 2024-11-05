@@ -4,10 +4,12 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@nativescript-community/ui-material-bottom-navigation": "^7.2.67",
     "@nativescript/core": "~8.8.0",
     "@nativescript/theme": "^3.1.0"
   },
   "devDependencies": {
+    "@nativescript/android": "8.8.6",
     "@nativescript/types": "~8.8.0",
     "@nativescript/webpack": "~5.0.0",
     "typescript": "~5.4.0"

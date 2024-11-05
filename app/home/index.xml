@@ -1,0 +1,60 @@
+<Page class="page" backgroundColor="transparent" actionBarHidden="true">
+    <!-- AppBar -->
+    
+    <ScrollView>
+        <StackLayout class="container">
+            <!-- Title and Subtitle -->
+            <Label text="Boards" class="title" />
+            <Label text="Following galleries to power up your art career" class="subtitle" />
+
+            <!-- Category Filters -->
+            <FlexboxLayout class="categories" flexDirection="row">
+                <Label text="Painting" class="category-label" />
+                <Label text="Illustration" class="category-label" />
+            </FlexboxLayout>
+
+            <!-- Paintings Section -->
+            <StackLayout class="gallery-section">
+                <!-- <Label text="Paintings" class="section-title" /> -->
+                <StackLayout class="galleryContainer">
+                    <GridLayout columns="*, *" class="gallery-grid">
+                        <StackLayout class="gallery-item">
+                            <Image src="~/images/test.jpg" class="gallery-image" />
+                        </StackLayout>
+                        <StackLayout class="gallery-item">
+                            <Image src="~/images/abc.jpg" class="gallery-image" />
+                        </StackLayout>
+                    </GridLayout>
+
+                    <StackLayout backgroundColor="red">
+                        <Label class="section-title" text="Paintings" />
+                    </StackLayout>
+
+
+                </StackLayout>
+            </StackLayout>
+
+            <!-- Illustrations Section -->
+            <StackLayout class="gallery-section">
+                <!-- <Label text="Illustrations" class="section-title" /> -->
+
+                <StackLayout class="galleryContainer">
+                    <GridLayout columns="*, *" class="gallery-grid">
+                        <StackLayout class="gallery-item">
+                            <Image src="~/images/test.jpg" class="gallery-image" />
+                        </StackLayout>
+                        <StackLayout class="gallery-item">
+                            <Image src="~/images/abc.jpg" class="gallery-image" />
+                        </StackLayout>
+                    </GridLayout>
+
+                    <StackLayout backgroundColor="red">
+                        <Label class="section-title" text= "Illustrations" />
+                    </StackLayout>
+
+
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+</Page>
