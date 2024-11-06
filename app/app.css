@@ -80,18 +80,18 @@ Image {
 }
 
 .gallery-section {
+    height: 325;
     margin-top: 16;
-    border-radius: 12;
-    background-color: #ffffff;
+    border-radius: 28;
+    background-color: red;
     padding: 12;
     margin-bottom: 16;
 }
-
 .section-title {
     font-size: 16;
     font-weight: bold;
     color: #333;
-    margin-bottom: 8;
+   
 }
 
 .gallery-grid {

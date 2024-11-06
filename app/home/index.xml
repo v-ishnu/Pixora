@@ -25,13 +25,13 @@
                             <Image src="~/images/abc.jpg" class="gallery-image" />
                         </StackLayout>
                     </GridLayout>
-
-                    <StackLayout backgroundColor="red">
-                        <Label class="section-title" text="Paintings" />
-                    </StackLayout>
-
-
                 </StackLayout>
+
+
+                <StackLayout backgroundColor="red" class="title-sec">
+                        <Label class="section-title" text="Paintings" />
+                </StackLayout>
+                
             </StackLayout>
 
             <!-- Illustrations Section -->
