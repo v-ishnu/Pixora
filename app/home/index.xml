@@ -14,26 +14,25 @@
             </FlexboxLayout>
 
             <!-- Paintings Section -->
-            <StackLayout class="gallery-section">
                 <!-- <Label text="Paintings" class="section-title" /> -->
                 <StackLayout class="galleryContainer">
-                    <GridLayout columns="*, *" class="gallery-grid">
-                        <StackLayout class="gallery-item">
-                            <Image src="~/images/test.jpg" class="gallery-image" />
-                        </StackLayout>
-                        <StackLayout class="gallery-item">
-                            <Image src="~/images/abc.jpg" class="gallery-image" />
-                        </StackLayout>
+                    <GridLayout rows="auto, auto" columns="2*, *" class="gallery-grid">
+                         <!-- Top Left Image: Spanning Across Two Columns -->
+                        <Image src="~/images/im1.png" row="0" rowSpan="2" class="gallery-image" />
+
+                        <!-- Bottom Left Image -->
+                        <Image src="~/images/test.jpg" row="0" col="1" class="gallery-image" backgroundColor="blue"/>
+
+                        <!-- Bottom Right Image -->
+                        <Image src="~/images/abc.jpg" row="1" col="1" class="gallery-image" backgroundColor="black"/>
                     </GridLayout>
-                </StackLayout>
 
-
-                <StackLayout backgroundColor="red" class="title-sec">
+                    <StackLayout class="gallery-section">
                         <Label class="section-title" text="Paintings" />
+                    </StackLayout>
+
                 </StackLayout>
                 
-            </StackLayout>
-
             <!-- Illustrations Section -->
             <StackLayout class="gallery-section">
                 <!-- <Label text="Illustrations" class="section-title" /> -->
@@ -48,13 +47,24 @@
                         </StackLayout>
                     </GridLayout>
 
-                    <StackLayout backgroundColor="red">
-                        <Label class="section-title" text= "Illustrations" />
+                     <StackLayout class="gallery-section">
+                        <Label class="section-title" text="Paintings" />
                     </StackLayout>
 
 
                 </StackLayout>
             </StackLayout>
+
+            <GridLayout>
+        <GridLayout rows="*,*" columns="*,*">
+            <!-- First Row -->
+            <Label text="Column 1 - Row 1 (spans 2 columns)" row="0" col="0" rowSpan="2" class="label" backgroundColor="red"/>
+            
+            <!-- Second Row -->
+            <Label text="Column 2 - Row 2" row="1" col="0" class="label" backgroundColor="blue" />
+            <Label text="Column 2 - Row 2" row="1" col="1" class="label" backgroundColor="red" />
+        </GridLayout>
+    </GridLayout>
         </StackLayout>
     </ScrollView>
 </Page>
