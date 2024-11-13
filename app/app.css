@@ -45,7 +45,6 @@ BottomNavigation.bottom-nav {
 
 /* Gallery Section Styling */
 .gallery-section {
-    height: 80;
     border-radius: 0 0 18 18;
     background-color: white;
     padding: 12;
@@ -62,11 +61,11 @@ BottomNavigation.bottom-nav {
 .gallery-image {
     width: 100%;
     height: 100%;
-    margin: 0; /* Ensure no margin on images */
+    margin: 0;
 }
 
 .gallery-grid {
     height: 40%;
     width: 89%;
-    padding: 0; /* Remove any padding in GridLayout */
+    padding: 0; 
 }

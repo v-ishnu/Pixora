@@ -14,21 +14,21 @@
             </FlexboxLayout>
 
             <!-- Paintings Section -->
-                <!-- <Label text="Paintings" class="section-title" /> -->
                 <StackLayout class="galleryContainer">
-                    <GridLayout rows="auto, auto" columns="2*, *" class="gallery-grid">
-                         <!-- Top Left Image: Spanning Across Two Columns -->
-                        <Image src="~/images/im1.png" row="0" rowSpan="2" class="gallery-image" />
+                    <GridLayout rows="*, *" columns="2*, *" class="p-1">
 
-                        <!-- Bottom Left Image -->
-                        <Image src="~/images/test.jpg" row="0" col="1" class="gallery-image" backgroundColor="blue"/>
-
-                        <!-- Bottom Right Image -->
-                        <Image src="~/images/abc.jpg" row="1" col="1" class="gallery-image" backgroundColor="black"/>
+                        <!-- Large image on the left -->
+                        <Image row="0" col="0" rowSpan="2" src="~/assets/parrot.jpg" stretch="aspectFill" borderTopLeftRadius="20"/>
+        
+                        <!-- Top right image -->
+                        <Image row="0" col="1" src="~/assets/children.jpg" stretch="aspectFill"  borderTopRightRadius="20"/>
+            
+                        <!-- Bottom right image -->
+                        <Image row="1" col="1" src="~/assets/ink.jpg" stretch="aspectFill" />
                     </GridLayout>
 
-                    <StackLayout class="gallery-section">
-                        <Label class="section-title" text="Paintings" />
+                    <StackLayout class="gallery-section" tap="{{onGetStarted}}">
+                        <Label class="section-title" style="margin-top:15px; margin-bottom:15px" text="Paintings" />
                     </StackLayout>
 
                 </StackLayout>
@@ -38,13 +38,16 @@
                 <!-- <Label text="Illustrations" class="section-title" /> -->
 
                 <StackLayout class="galleryContainer">
-                    <GridLayout columns="*, *" class="gallery-grid">
-                        <StackLayout class="gallery-item">
-                            <Image src="~/images/test.jpg" class="gallery-image" />
-                        </StackLayout>
-                        <StackLayout class="gallery-item">
-                            <Image src="~/images/abc.jpg" class="gallery-image" />
-                        </StackLayout>
+                    <GridLayout rows="*, *" columns="2*, *" class="p-1">
+
+                        <!-- Large image on the left -->
+                        <Image row="0" col="0" rowSpan="2" src="~/assets/parrot.jpg" class="rounded-lg m-1" stretch="aspectFill" borderTopLeftRadius="20" />
+        
+                        <!-- Top right image -->
+                        <Image row="0" col="1" src="~/assets/children.jpg" class="rounded-lg m-1" stretch="aspectFill"  borderTopRighRadius="20"/>
+            
+                        <!-- Bottom right image -->
+                        <Image row="1" col="1" src="~/assets/ink.jpg" class="rounded-lg m-1" stretch="aspectFill" />
                     </GridLayout>
 
                      <StackLayout class="gallery-section">
@@ -54,17 +57,6 @@
 
                 </StackLayout>
             </StackLayout>
-
-            <GridLayout>
-        <GridLayout rows="*,*" columns="*,*">
-            <!-- First Row -->
-            <Label text="Column 1 - Row 1 (spans 2 columns)" row="0" col="0" rowSpan="2" class="label" backgroundColor="red"/>
-            
-            <!-- Second Row -->
-            <Label text="Column 2 - Row 2" row="1" col="0" class="label" backgroundColor="blue" />
-            <Label text="Column 2 - Row 2" row="1" col="1" class="label" backgroundColor="red" />
-        </GridLayout>
-    </GridLayout>
         </StackLayout>
     </ScrollView>
 </Page>

@@ -1,6 +1,55 @@
-<Page class="page" actionBarHidden="true">
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" actionBarHidden="true">
 
-    <StackLayout>
-        <Label text="This is the Gallery Page" class="content" />
-    </StackLayout>
+    
+        <StackLayout class="p-4">
+            <!-- Title and Subtitle -->
+            <Label text="&#xf004;" class="fas text-white" />
+            <Label text="Illustrations" class="title" style="margin-left:15px; font-size:27;"/>
+            <Label text="CURATED GALLERIES" class="subtitle" style="margin-left:15px" />      
+
+
+            <!-- Categories Grid -->
+            <GridLayout columns="*, *, *" rows="auto, auto" style="padding-bottom:60px">
+                <GridLayout rows="auto" cols="*" col="0" class="category-item">
+                    <Image src="~/assets/pottery.jpg" stretch="aspectFill" height="80" style="border-radius:20px; margin-left:20px; margin-right:10px" />
+                </GridLayout>
+                <Label text="Oil paintings" col="0" row="1" style="margin-left:30px; margin-right:10px;font-size:14" />
+
+                <GridLayout rows="auto" cols="*" col="1" class="category-item">
+                    <Image src="~/assets/bg.jpg" stretch="aspectFill" height="80" style="border-radius:20px; margin-left:20px; margin-right:10px;" />
+                </GridLayout>
+                <Label text="Museums" col="1" row="1" style="margin-left:30px; margin-right:10px; font-size:14;"  />
+
+                <GridLayout rows="auto" cols="*" col="2" class="category-item">
+                    <Image src="~/assets/bg.jpg" stretch="aspectFill" height="80" style="border-radius:20px; margin-left:20px; margin-right:10px" />
+                </GridLayout>
+                <Label text="Wall arts" col="2" row="1" style="margin-left:30px; margin-right:10px; font-size:14"  />
+            </GridLayout>
+
+            
+            <!-- Featured Image -->
+            <FlexboxLayout style="width:95%; padding-bottom:50px">
+                <Image src="~/assets/painting.jpg" stretch="aspectFill" height="200" class="mb-4" style="border-radius:28px" />
+            </FlexboxLayout>
+
+            <ScrollView>
+            <!-- Bottom Grid -->
+            <FlexboxLayout width="95%">
+                <!-- Alternating Grid Gallery -->
+                <GridLayout columns="*, *" rows="auto, auto, auto">
+                <!-- Row 1: Small + Large -->
+                <Image col="0" row="0" src="~/assets/bg.jpg" stretch="aspectFill"  style="border-radius: 12; margin: 4; heigth:120px" />
+                <Image col="1" row="0" rowSpan="2" src="~/assets/bg.jpg" stretch="aspectFill" style="border-radius: 12; margin: 4; heigth:180px" />
+                
+                <!-- Row 2: Small (left side only, right side occupied by large image above) -->
+                <Image col="0" row="1" src="~/assets/bg.jpg" stretch="aspectFill" style="border-radius: 12; margin: 4; heigth:120px" />
+                
+                <!-- Row 3: Large + Small -->
+                <Image col="0" row="2" rowSpan="2" src="~/assets/bg.jpg" stretch="aspectFill" style="border-radius: 12; margin: 4; heigth:120px" />
+                <Image col="1" row="2" src="~/assets/bg.jpg" stretch="aspectFill" style="border-radius: 12; margin: 4; heigth:120px"  />
+                </GridLayout>
+            </FlexboxLayout>
+            </ScrollView>
+        </StackLayout>
+    
 </Page>
