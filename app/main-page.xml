@@ -21,10 +21,10 @@
             <Frame defaultPage="home/index" actionBarHidden="true" />
         </mdk:TabContentItem>
         <mdk:TabContentItem>
-            <Frame defaultPage="gallery/index" />
+            <Frame defaultPage="gallery/index" actionBarHidden="true"  />
         </mdk:TabContentItem>
         <mdk:TabContentItem>
-            <Frame defaultPage="profile/index" />
+            <Frame defaultPage="profile/index" actionBarHidden="true"  />
         </mdk:TabContentItem>
     </mdk:BottomNavigation>
 </Page>

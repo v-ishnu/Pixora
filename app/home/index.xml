@@ -1,4 +1,4 @@
-<Page class="page" backgroundColor="transparent" actionBarHidden="true">
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" actionBarHidden="true">
     <!-- AppBar -->
     
     <ScrollView>
