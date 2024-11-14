@@ -19,7 +19,7 @@
                 <Label text="Museums" col="1" row="1" style="margin-left:30px; margin-right:10px; font-size:14;"  />
 
                 <GridLayout rows="auto" cols="*" col="2" class="category-item">
-                    <Image src="~/assets/bg.jpg" stretch="aspectFill" height="80" style="border-radius:20px; margin-left:20px; margin-right:10px" tap="onImageTap"/>
+                    <Image src="~/assets/children.jpg" stretch="aspectFill" height="80" style="border-radius:20px; margin-left:20px; margin-right:10px" tap="onImageTap"/>
                 </GridLayout>
                 <Label text="Wall arts" col="2" row="1" style="margin-left:30px; margin-right:10px; font-size:14"  />
             </GridLayout>
@@ -36,15 +36,15 @@
                 <!-- Alternating Grid Gallery -->
                 <GridLayout columns="*, *" rows="auto, auto, auto">
                 <!-- Row 1: Small + Large -->
-                <Image col="0" row="0" src="~/assets/bg.jpg" stretch="aspectFill"  style="border-radius: 12; margin: 4; heigth:120px" tap="onImageTap" />
-                <Image col="1" row="0" rowSpan="2" src="~/assets/bg.jpg" stretch="aspectFill" style="border-radius: 12; margin: 4; heigth:180px" tap="onImageTap"/>
+                <Image col="0" row="0" src="~/assets/hummingbird.jpg" stretch="aspectFill"  style="border-radius: 12; margin: 4; heigth:120px" tap="onImageTap" />
+                <Image col="1" row="0" rowSpan="2" src="~/assets/lion.jpg" stretch="aspectFill" style="border-radius: 12; margin: 4; heigth:180px" tap="onImageTap"/>
                 
                 <!-- Row 2: Small (left side only, right side occupied by large image above) -->
                 <Image col="0" row="1" src="~/assets/bg.jpg" stretch="aspectFill" style="border-radius: 12; margin: 4; heigth:120px" tap="onImageTap"/>
                 
                 <!-- Row 3: Large + Small -->
-                <Image col="0" row="2" rowSpan="2" src="~/assets/bg.jpg" stretch="aspectFill" style="border-radius: 12; margin: 4; heigth:120px" tap="onImageTap"/>
-                <Image col="1" row="2" src="~/assets/bg.jpg" stretch="aspectFill" style="border-radius: 12; margin: 4; heigth:120px"  tap="onImageTap"/>
+                <Image col="0" row="2" rowSpan="2" src="~/assets/ink.jpg" stretch="aspectFill" style="border-radius: 12; margin: 4; heigth:120px" tap="onImageTap"/>
+                <Image col="1" row="2" src="~/assets/diwalii.jpg" stretch="aspectFill" style="border-radius: 12; margin: 4; heigth:120px"  tap="onImageTap"/>
                 </GridLayout>
             </FlexboxLayout>
             </ScrollView>
