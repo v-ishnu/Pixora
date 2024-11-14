@@ -1,0 +1,38 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" actionBarHidden="true">
+
+    
+        <StackLayout class="p-4">
+            <!-- Title and Subtitle -->
+            <Label text="&#xf004;" style="margin-left:15px; font-size:30;" tap="goBack" />
+            <Label text="Illustrations" class="title" style="margin-left:15px; font-size:27;"/>
+            <Label text="CURATED GALLERIES" class="subtitle" style="margin-left:15px" />
+
+            
+            <!-- Featured Image -->
+            <FlexboxLayout style="width:94%; padding-bottom:50px">
+                <Image src="~/assets/dev.jpg" stretch="aspectFill" height="200" class="mb-4" style="border-radius:28px" tap="onImageTap" />
+            </FlexboxLayout>
+
+            <ScrollView>
+            <!-- Bottom Grid -->
+            <FlexboxLayout width="95%">
+                <!-- Alternating Grid Gallery -->
+                <GridLayout columns="*, *" rows="auto, auto, auto, auto, auto">
+                <!-- Row 1: Small + Large -->
+                <Image col="0" row="0" src="~/assets/diwalii.jpg" stretch="aspectFill"  style="border-radius: 12; margin: 4; heigth:120px" tap="onImageTap" />
+                <Image col="1" row="0" rowSpan="2" src="~/assets/sketboardi.jpg" stretch="aspectFill" style="border-radius: 12; margin: 4; heigth:180px" tap="onImageTap"/>
+                
+                <!-- Row 2: Small (left side only, right side occupied by large image above) -->
+                <Image col="0" row="1" src="~/assets/bg.jpg" stretch="aspectFill" style="border-radius: 12; margin: 4; heigth:120px" tap="onImageTap"/>
+                
+                <!-- Row 4: Small + Large -->
+                <Image col="1" row="3" src="~/assets/krishnago.jpg" stretch="aspectFill"  style="border-radius: 12; margin: 4; heigth:120px" tap="onImageTap" />
+                <Image col="0" row="3" rowSpan="2" src="~/assets/lion.jpg" stretch="aspectFill" style="border-radius: 12; margin: 4; heigth:180px" tap="onImageTap"/>
+                <!-- Row 4: -->
+                <Image col="1" row="4" colSpan="2" src="~/assets/river.jpg" stretch="aspectFill" style="border-radius: 12; margin: 4; heigth:120px" tap="onImageTap"/>
+                </GridLayout>
+            </FlexboxLayout>
+            </ScrollView>
+        </StackLayout>
+    
+</Page>

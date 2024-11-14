@@ -4,9 +4,7 @@
         <StackLayout class="p-4">
             <!-- Title and Subtitle -->
             <Label text="&#xf004;" style="margin-left:15px; font-size:30;" tap="goBack" />
-            <Label text="Illustrations" class="title" style="margin-left:15px; font-size:27;"/>
-            <Label text="CURATED GALLERIES" class="subtitle" style="margin-left:15px" />      
-
+            <Label text="Gallery" class="title" style="margin-left:15px; font-size:27;"/>
 
             <!-- Categories Grid -->
             <GridLayout columns="*, *, *" rows="auto, auto" style="padding-bottom:60px">

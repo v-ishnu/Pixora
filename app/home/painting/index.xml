@@ -1,0 +1,35 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" actionBarHidden="true">
+
+    
+        <StackLayout class="p-4">
+            <!-- Title and Subtitle -->
+            <Label text="<" style="margin-left:15px; font-size:30;" tap="goBack" />
+            <Label text="Painting" class="title" style="margin-left:15px; font-size:27;"/>
+
+            <ScrollView>
+            <!-- Bottom Grid -->
+            <FlexboxLayout width="95%">
+                <!-- Alternating Grid Gallery -->
+                <GridLayout columns="*, *" rows="auto, auto, auto, auto, auto">
+                <!-- Row 1: Small + Large -->
+                <Image col="0" row="0" src="~/assets/hummingbird.jpg" stretch="aspectFill"  style="border-radius: 12; margin: 4; heigth:120px" tap="onImageTap" />
+                <Image col="1" row="0" rowSpan="2" src="~/assets/animalpaint.jpg" stretch="aspectFill" style="border-radius: 12; margin: 4; heigth:180px" tap="onImageTap"/>
+                
+                <!-- Row 2: Small (left side only, right side occupied by large image above) -->
+                <Image col="0" row="1" src="~/assets/parrot.jpg" stretch="aspectFill" style="border-radius: 12; margin: 4; heigth:120px" tap="onImageTap"/>
+                
+                <!-- Row 3: -->
+                <Image col="0" row="2" colSpan="2" src="~/assets/painting.jpg" stretch="aspectFill" style="border-radius: 12; margin: 4; heigth:120px" tap="onImageTap"/>
+
+                 <!-- Row 4: Small + Large -->
+                <Image col="1" row="3" src="~/assets/krishnago.jpg" stretch="aspectFill"  style="border-radius: 12; margin: 4; heigth:120px" tap="onImageTap" />
+                <Image col="0" row="3" rowSpan="2" src="~/assets/lion.jpg" stretch="aspectFill" style="border-radius: 12; margin: 4; heigth:180px" tap="onImageTap"/>
+                <!-- Row 4: -->
+                <Image col="1" row="4" colSpan="2" src="~/assets/river.jpg" stretch="aspectFill" style="border-radius: 12; margin: 4; heigth:120px" tap="onImageTap"/>
+
+                </GridLayout>
+            </FlexboxLayout>
+            </ScrollView>
+        </StackLayout>
+    
+</Page>

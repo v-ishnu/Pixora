@@ -1,4 +1,4 @@
-import { EventData, Page, Image, Frame } from "@nativescript/core";
+import { EventData, Page, Image, Frame, CoreTypes } from "@nativescript/core";
 
 export function onNavigatingTo(args: EventData) {
     const page = args.object as Page;
@@ -15,4 +15,24 @@ export function onNavigatingTo(args: EventData) {
 
 export function goBack(args: EventData) {
     Frame.topmost().goBack();
+}
+
+export function overView(args: EventData) {
+    const page = (args.object as Page);
+
+    page.showModal(
+        "gallery/open/overview-modal",
+        {
+            context: {},
+            closeCallback: () => {},
+            fullscreen: false,
+            animated: true,
+            stretched: true,
+            transition: {
+                name: "slideBottom", 
+                duration: 30000,       
+                curve: CoreTypes.AnimationCurve.easeInOut  
+            }
+        }
+    );
 }

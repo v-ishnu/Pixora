@@ -1,6 +1,5 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" actionBarHidden="true">
     <!-- AppBar -->
-    
     <ScrollView>
         <StackLayout class="container">
             <!-- Title and Subtitle -->
@@ -9,52 +8,41 @@
 
             <!-- Category Filters -->
             <FlexboxLayout class="categories" flexDirection="row">
-                <Label text="Painting" class="category-label" />
-                <Label text="Illustration" class="category-label" />
+                <Label text="Painting" class="category-label" tap="onPainting" />
+                <Label text="Illustration" class="category-label" tap="onIllustration" />
             </FlexboxLayout>
 
             <!-- Paintings Section -->
-                <StackLayout class="galleryContainer">
-                    <GridLayout rows="*, *" columns="2*, *" class="p-1">
+            <StackLayout class="galleryContainer">
+                <GridLayout rows="*, *" columns="2*, *" class="p-1">
+                    <!-- Large image on the left -->
+                    <Image row="0" col="0" rowSpan="2" src="~/assets/parrot.jpg" stretch="aspectFill" style="border-top-left-radius: 20;" tap="onImageTap"/>
+                    
+                    <!-- Top right image -->
+                    <Image row="0" col="1" src="~/assets/children.jpg" stretch="aspectFill" style="border-top-right-radius: 20;" tap="onImageTap"/>
+                    
+                    <!-- Bottom right image -->
+                    <Image row="1" col="1" src="~/assets/ink.jpg" stretch="aspectFill" tap="onImageTap" />
+                </GridLayout>
 
-                        <!-- Large image on the left -->
-                        <Image row="0" col="0" rowSpan="2" src="~/assets/parrot.jpg" stretch="aspectFill" borderTopLeftRadius="20"/>
-        
-                        <!-- Top right image -->
-                        <Image row="0" col="1" src="~/assets/children.jpg" stretch="aspectFill"  borderTopRightRadius="20"/>
-            
-                        <!-- Bottom right image -->
-                        <Image row="1" col="1" src="~/assets/ink.jpg" stretch="aspectFill" />
-                    </GridLayout>
-
-                    <StackLayout class="gallery-section" tap="{{onGetStarted}}">
-                        <Label class="section-title" style="margin-top:15px; margin-bottom:15px" text="Paintings" />
-                    </StackLayout>
-
+                <StackLayout style="border-radius: 0 0 18 18; background-color: white; padding: 12; margin-bottom: 16;box-shadow: 0 4 4 rgba(0, 0, 0, 0.3);" tap="onUpload">
+                    <Label class="section-title" style="margin-top:15px; margin-bottom:15px" text="Paintings" />
                 </StackLayout>
-                
+            </StackLayout>
+
             <!-- Illustrations Section -->
             <StackLayout class="gallery-section">
-                <!-- <Label text="Illustrations" class="section-title" /> -->
-
                 <StackLayout class="galleryContainer">
                     <GridLayout rows="*, *" columns="2*, *" class="p-1">
-
                         <!-- Large image on the left -->
-                        <Image row="0" col="0" rowSpan="2" src="~/assets/parrot.jpg" class="rounded-lg m-1" stretch="aspectFill" borderTopLeftRadius="20" />
-        
+                        <Image row="0" col="0" rowSpan="2" src="~/assets/parrot.jpg" class="rounded-lg m-1" stretch="aspectFill" style="border-top-left-radius: 20;" />
+                        
                         <!-- Top right image -->
-                        <Image row="0" col="1" src="~/assets/children.jpg" class="rounded-lg m-1" stretch="aspectFill"  borderTopRighRadius="20"/>
-            
+                        <Image row="0" col="1" src="~/assets/children.jpg" class="rounded-lg m-1" stretch="aspectFill" style="border-top-right-radius: 20;" />
+                        
                         <!-- Bottom right image -->
                         <Image row="1" col="1" src="~/assets/ink.jpg" class="rounded-lg m-1" stretch="aspectFill" />
                     </GridLayout>
-
-                     <StackLayout class="gallery-section">
-                        <Label class="section-title" text="Paintings" />
-                    </StackLayout>
-
-
                 </StackLayout>
             </StackLayout>
         </StackLayout>

@@ -1,0 +1,14 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" class="modal-page">
+    <StackLayout 
+        width="95%"  
+        height="80%"
+        padding="20" 
+        backgroundColor="white" 
+        borderRadius="20"
+        verticalAlignment="center" 
+        horizontalAlignment="center">
+        
+        <Label text="Overview Content" textWrap="true" />
+        <Button text="Close" tap="closeModal" />
+    </StackLayout>
+</Page>

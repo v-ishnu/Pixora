@@ -1,0 +1,38 @@
+<Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" actionBarHidden="true">
+
+    <GridLayout rows="*, auto" class="p-4">
+        
+        <!-- Top Content Section -->
+        <StackLayout row="0">
+            <!-- Title and Subtitle -->
+            <Label text="<" style="margin-left:15px; font-size:30;" tap="goBack" />
+            <Label text="Upload" class="title" style="margin-left:15px; font-size:27; padding-bottom:20" />
+
+            <!-- Scrollable Content -->
+            <ScrollView>
+                <StackLayout spacing="20" >
+
+                    <!-- Name Input -->
+                    <TextField hint="Enter your name" class="input" style="border-radius:22px; border-width:2px; border-color:#cccccc; height:120px; padding:10px;" />
+
+
+                    <!-- Category Selection -->
+                    <TextField hint="Category" class="input" style="border-radius:22px; border-width:2px; border-color:#cccccc; height:120px; padding:10px;" />
+
+                    <!-- Image Upload Section -->
+                    <StackLayout style=" width:94%; height:500px; background-color:#f0f0f0; border-radius:20" tap="onChooseImageTap">
+                        <Label text="Upload your Image" style=""/>
+                        <Image src="{{ imageUrl }}" class="image-input" style="width:100px; height:100px; border-radius:10px; border-width:2px; border-color:#cccccc;" />
+                    </StackLayout>
+
+
+
+                 </StackLayout>
+            </ScrollView>
+        </StackLayout>
+
+        <!-- Button at Bottom -->
+        <Button row="1" text="onUploadTap" tap="{{ onSkip }}" style="border-radius:150px; Background-color: #ffa726; font-size:17; font-weight:bold; color:black"/>
+        
+    </GridLayout>
+</Page>

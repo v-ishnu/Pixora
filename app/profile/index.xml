@@ -1,2 +1,21 @@
 <Page xmlns="http://schemas.nativescript.org/tns.xsd" navigatingTo="navigatingTo" actionBarHidden="true">
+
+    <GridLayout>
+        <!--background image -->
+        <Image src="~/assets/painting.jpg" stretch="aspectFill" />
+        
+        <!-- Content overlay -->
+        <GridLayout rows="*, auto">
+            
+            
+            <StackLayout row="0" verticalAlignment="top" style=" margin-left:20;">
+                <Label text="&#xf004;" style="font-size:40; color:white" />
+            </StackLayout>
+
+            <!-- Bottom Buttons -->
+            <StackLayout row="1" style="padding-top:40px; padding-bottom:40px; background:white" borderTopRightRadius="20" borderTopLeftRadius="20">
+                <Button text="Skip" tap="{{ onSkip }}" style="border-radius:150px; width:33%; Background-color: #ffa726; font-size:17; font-weight:bold; color:black"/>
+            </StackLayout>
+        </GridLayout>
+    </GridLayout>
 </Page>
